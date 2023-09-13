@@ -1,0 +1,27 @@
+@use "variables" as var;
+
+h2{
+    color:var.$color-secondary;
+    text-align: center;
+}
+@include var.line;
+#technologies{
+    display: flex;
+    justify-content: space-around;
+    .box{
+        display: flex;
+        h2{
+            writing-mode: vertical-lr;
+        }
+            li{
+                height: fit-content;
+                margin: 5px;
+                padding: 10px;
+                border-radius: var.$radius;
+                background: var.$color-secondary;
+                font-style: italic;
+                list-style:none;
+            }
+        
+    }
+}

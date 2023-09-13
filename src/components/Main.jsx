@@ -2,12 +2,12 @@ import outdoors from "../images/outdoors-svgrepo-com.svg"
 import gaming from "../images/gaming-screen-svgrepo-com.svg"
 import tech from "../images/cpu-5-svgrepo-com.svg"
 import travel from "../images/travel-round-svgrepo-com.svg"
+import "../styles/home.scss";
 
 
 export default function Main(){
     return(
         <>
-        <div id="about-me-content">
             <div className="line">
                 <hr />
                 <h1>ABOUT ME </h1>
@@ -27,7 +27,7 @@ export default function Main(){
             <p>March 2023 {`-`} July 2023</p>
             <p>McGill University, Quebec, Canada</p>      
                 </div>
-                <hr />
+                {/* <hr /> */}
                 <div id="edu-2">   
             <h3>Computer and Information Technology Certificate</h3>
             <p>2020 {`-`} 2022</p>
@@ -40,20 +40,28 @@ export default function Main(){
             <hr />
             </div>
             <div className="hobbies">
-            <div className="hobbies-txt">
-                <h4>outdoors</h4>
-                <h4>technology</h4>
-                <h4>travel</h4>
-                <h4>gaming</h4>
-            </div>
                 <div className="hobbies-svg">
-                <img src={outdoors} alt="outdoors" hover="outdoors"/>
-                <img src={tech} alt="" />
-                <img src={travel} alt="" />
-                <img src={gaming} alt="" />
+                    <div className="img-and-txt">
+                     <h4>technology</h4>
+                    <img src={tech} alt="outdoors" hover="outdoors"/>
+                    </div>
+                    <div className="img-and-txt">
+                     <h4>outdoors</h4>
+                    <img src={outdoors} alt="outdoors" hover="outdoors"/>
+                    </div>
+                    <div className="img-and-txt">
+                     <h4>travel</h4>
+                    <img src={travel} alt="outdoors" hover="outdoors"/>
+                    </div>
+                    <div className="img-and-txt">
+                     <h4>gaming</h4>
+                    <img src={gaming} alt="outdoors" hover="outdoors"/>
+                    </div>
+                    {/* <img src={tech} alt="" />
+                    <img src={travel} alt="" />
+                    <img src={gaming} alt="" /> */}
                 </div>
             </div>
-        </div>
     </>
     )
 

@@ -1,6 +1,10 @@
 import image from "../images/headshot.jpeg"
 
-export default function Nav(){
+export default function Nav(props){
+    console.log(props.page);
+
+
+
     return (
     <>
 
@@ -11,16 +15,24 @@ export default function Nav(){
         </div>
         <h1>Mohedeen Tabbara</h1>
         <li>
-            <button> HOME </button>
+            <button
+            onClick={()=>props.setPage("Main")}
+            > HOME </button>
             </li>
         <li>
-            <button> SKILLSET </button>
+            <button
+            onClick={()=>props.setPage("SkillsExp")}
+            > SKILLS AND EXPERIENCE </button>
             </li>
         <li>
-            <button> PROJECTS </button>
+            <button
+            onClick={()=>props.setPage("Projects")}
+            > PROJECTS </button>
             </li>
         <li>
-            <button> CONTACT </button>
+            <button
+            onClick={()=>props.setPage("Contact")}
+            > CONTACT </button>
             </li>
     </nav>
         </div>
