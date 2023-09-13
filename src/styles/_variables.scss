@@ -1,0 +1,21 @@
+//color palette
+$color-primary: #2a2a2a;
+$color-secondary: SlateBlue;
+
+$radius: 20px;
+
+//mixins
+
+@mixin line(){
+    .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    hr {
+        flex-grow: 1; /* Allow the <hr> to take available space */
+        border: none; /* Remove default border */
+        border-top: 1px solid black; /* Add a top border to simulate a horizontal line */
+    }
+}
+}
