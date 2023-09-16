@@ -59,8 +59,9 @@ h2{
             scrollbar-width: 1px;
             min-height: 350px;
             min-width: 470px;
+            user-select: none;
         }
-            a{
+            // a{
                 button{
                     color: white;
                     font-size: 1em;
@@ -72,6 +73,24 @@ h2{
                     border-radius: var.$radius;
                     margin-top: 1em;
                 }
+            // }
+    }
+}
+#sources{
+    ul{
+        list-style: none;
+        li{
+            display: flex;
+            align-items: center;
+            *{
+                margin: 1em;
             }
+            a{
+                text-decoration: none;
+            }
+            img{
+                max-width: 5em;
+            }
+        }
     }
 }

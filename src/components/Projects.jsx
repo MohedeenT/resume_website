@@ -1,4 +1,5 @@
 import "../styles/projects.scss"
+import gh from "../images/github.svg"
 
 export default function Projects(){
     return(
@@ -21,9 +22,9 @@ export default function Projects(){
             <div className="placeholder">
                 <h4>COMING SOON.</h4>
             </div>
-            <a disabled href="https://mohedeent.github.io/Productivity_app/" target="_blank" rel="noreferrer">
+            {/* <a disabled={true} href="" target="" rel="noreferrer"> */}
             <button disabled={true}>VISIT FULL SITE</button>
-            </a>
+            {/* </a> */}
         </div>
         </div>
         <div className="line">
@@ -31,7 +32,11 @@ export default function Projects(){
                 <h1>SOURCES</h1>
                 <hr />
         </div>
-        <h1>TODO: ADD LINK TO GITHUB WITH SVG ALSO</h1>
+        <div id="sources">
+            <ul>
+                <li><img src={gh} alt="link to gihub repository for productivity app" /> <a href="https://github.com/MohedeenT/Productivity_app" target="_blank" rel="noreferrer">PRODUCTIVITY APP REPO</a>  </li>
+            </ul>
+        </div>
         </>
     )
 }
