@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/resume_website/static/css/main.ecaa5098.css",
+    "main.css": "/resume_website/static/css/main.932ac21f.css",
     "main.js": "/resume_website/static/js/main.27f0f69e.js",
     "static/media/headshot.jpeg": "/resume_website/static/media/headshot.3be43d73d8d92104db27.jpeg",
     "static/media/resume.pdf": "/resume_website/static/media/resume.8874d492eb1e2e81619b.pdf",
@@ -11,11 +11,11 @@
     "static/media/travel-round-svgrepo-com.svg": "/resume_website/static/media/travel-round-svgrepo-com.d62aa35822ea65f38b5e8d7c4ac32fae.svg",
     "index.html": "/resume_website/index.html",
     "static/media/linkedin.svg": "/resume_website/static/media/linkedin.e6caf06bea36e8c1fd7545706cd71c86.svg",
-    "main.ecaa5098.css.map": "/resume_website/static/css/main.ecaa5098.css.map",
+    "main.932ac21f.css.map": "/resume_website/static/css/main.932ac21f.css.map",
     "main.27f0f69e.js.map": "/resume_website/static/js/main.27f0f69e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecaa5098.css",
+    "static/css/main.932ac21f.css",
     "static/js/main.27f0f69e.js"
   ]
 }
