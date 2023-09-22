@@ -17,10 +17,11 @@ export default function Contact(){
         e.preventDefault()
         const config ={
             SecureToken:"0c984fbd-c01b-4634-b734-2c0e29984d42",
-            To : 'mohedine.tabbara@gmail.com',
-            From : formData.email,
+            To : 'airings-trivium0x@icloud.com',
+            From : 'mohedine.tabbara@gmail.com',
             Subject : `from: ${formData.name} - ${formData.subject}`,
-            Body : formData.messageBody
+            Body : `Message from ${formData.email}: 
+            ${formData.messageBody}`
         }
         if (window.Email) {
             window.Email.send(config).then(
