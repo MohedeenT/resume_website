@@ -25,7 +25,7 @@ export default function Contact(){
         }
         if (window.Email) {
             window.Email.send(config).then(
-                message => alert(message)
+                message => alert("message sent")
               );
         }
         setFormData({
