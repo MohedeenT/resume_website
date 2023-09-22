@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resume_website/static/css/main.0f5dd5c2.css",
-    "main.js": "/resume_website/static/js/main.11070c1b.js",
+    "main.js": "/resume_website/static/js/main.4307be4e.js",
     "static/media/headshot.jpeg": "/resume_website/static/media/headshot.3be43d73d8d92104db27.jpeg",
     "static/media/resume.pdf": "/resume_website/static/media/resume.8874d492eb1e2e81619b.pdf",
     "static/media/outdoors-svgrepo-com.svg": "/resume_website/static/media/outdoors-svgrepo-com.633f4fe9f28c9e9732528fda7831c33c.svg",
@@ -12,10 +12,10 @@
     "index.html": "/resume_website/index.html",
     "static/media/linkedin.svg": "/resume_website/static/media/linkedin.e6caf06bea36e8c1fd7545706cd71c86.svg",
     "main.0f5dd5c2.css.map": "/resume_website/static/css/main.0f5dd5c2.css.map",
-    "main.11070c1b.js.map": "/resume_website/static/js/main.11070c1b.js.map"
+    "main.4307be4e.js.map": "/resume_website/static/js/main.4307be4e.js.map"
   },
   "entrypoints": [
     "static/css/main.0f5dd5c2.css",
-    "static/js/main.11070c1b.js"
+    "static/js/main.4307be4e.js"
   ]
 }
