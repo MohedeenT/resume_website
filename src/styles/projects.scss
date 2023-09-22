@@ -59,7 +59,7 @@ h2{
             border: none;
             scrollbar-width: 1px;
             min-height: 350px;
-            min-width: 470px;
+            max-width: 470px;
             user-select: none;
         }
             // a{
@@ -100,5 +100,75 @@ h2{
 @media(max-width: 1300px){
     #websites{
         flex-direction: column;
+        #snooze{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h3{
+                text-align: center;
+                color: var.$color-secondary;
+            }
+            iframe{
+                border-radius: var.$radius;
+                border: none;
+                scrollbar-width: 1px;
+                width:100%;
+                min-height: 350px;
+                max-width: 470px;
+            }
+                a{
+                    button{
+                        color: white;
+                        font-size: 1em;
+                        border: none;
+                        background: var.$color-secondary;
+                        padding: 0.5em;
+                        transition: all 0.3s ease;                    /* Smooth transitions for hover */
+                        position: relative;
+                        border-radius: var.$radius;
+                        margin-top: 1em;
+                    }
+                }
+        }
+        #games{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            h3{
+                text-align: center;
+                color: var.$color-secondary;
+            }
+            .placeholder{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var.$color-secondary;
+                border-radius: var.$radius;
+                border: none;
+                scrollbar-width: 1px;
+                width: 100%;
+                min-height: 350px;
+                max-width: 470px;
+                user-select: none;
+            }
+                // a{
+                    button{
+                        text-decoration:line-through;
+                        color: white;
+                        font-size: 1em;
+                        border: none;
+                        background: var.$color-primary;
+                        padding: 0.5em;
+                        transition: all 0.3s ease;                    /* Smooth transitions for hover */
+                        position: relative;
+                        border-radius: var.$radius;
+                        margin-top: 1em;
+                    }
+                // }
+        }
     }
+    
 }
