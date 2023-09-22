@@ -1,5 +1,22 @@
 @use "variables" as var;
 
+#download-btn{
+    a{
+        button{
+            color: white;
+            font-size: 1em;
+            border: none;
+            background: var.$color-secondary;
+            padding: 0.5em;
+            transition: all 0.3s ease;                    /* Smooth transitions for hover */
+            position: relative;
+            border-radius: var.$radius;
+            &:hover{
+                transform: translateY(-5px); 
+            }
+        }
+    }
+}
 @include var.line;
 h2{
     color:var.$color-secondary;
@@ -10,9 +27,17 @@ h2{
     justify-content: space-around;
     .box{
         display: flex;
-        h2{
-            writing-mode: vertical-lr;
+        justify-content: center;
+        align-self: center;
+        .tech-type{
+        margin: 1em;
+            h2{
+                writing-mode: vertical-lr;
+            }
         }
+        .tech{
+            display: flex;
+            flex-wrap: wrap;
             li{
                 height: fit-content;
                 margin: 5px;
@@ -22,6 +47,7 @@ h2{
                 font-style: italic;
                 list-style:none;
             }
+        }
         
     }
 }
@@ -54,19 +80,49 @@ h2{
         }
     }
 }
-#download-btn{
-    a{
-        button{
-            color: white;
-            font-size: 1em;
-            border: none;
-            background: var.$color-secondary;
-            padding: 0.5em;
-            transition: all 0.3s ease;                    /* Smooth transitions for hover */
-            position: relative;
-            border-radius: var.$radius;
-            &:hover{
-                transform: translateY(-5px); 
+@media(max-width: 1300px){
+    #technologies{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .box{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            .tech-type{
+            margin: 1em;
+                h2{
+                    writing-mode: vertical-lr;
+                }
+            }
+            .tech{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    height: fit-content;
+                    margin: 5px;
+                    padding: 10px;
+                    border-radius: var.$radius;
+                    background: var.$color-secondary;
+                    font-style: italic;
+                    list-style:none;
+                }
+            }
+            
+        }
+    }
+    #languages{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+        div{
+            padding: 1em;
+            em{
+                font-size: 100%;
+                color: var.$color-secondary;
+                opacity: 0.5;
+                padding: 1rem;
             }
         }
     }

@@ -1,4 +1,6 @@
 @use "variables" as var;
+@include var.line;
+
 
 html {
     background-color: var.$color-primary;
@@ -8,7 +10,7 @@ html {
 
   #container{
     display: flex;
-    height: 100vh;
+    height: 100%;
   }
   
   /* ****** NAV ******** */
@@ -21,7 +23,7 @@ html {
   }
 
   nav {
-    min-height: 100vh;
+    min-height: 100%;
     min-width: fit-content;
     color: white;
     display: flex;
@@ -46,13 +48,14 @@ html {
         list-style: none;
         button{
             color: var.$color-primary;
-            max-width: 100%;
-            font-size: 40px;
+            width: 100%;
+            font-size: 1.75em;
             background: var.$color-secondary;
             border: none;
-            margin: 1rem;
+            border-radius: var.$radius;
+            margin-top: 1rem;
             &:hover{
-                text-decoration: underline;
+                text-decoration:underline;
             }
         }
     }
@@ -62,14 +65,88 @@ html {
 
 .about-me-content{
     margin: 2em;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #content-area-main{
+    
     min-width: 75%;
     min-height: 100%;
-    height: fit-content;
     background: whitesmoke;
     border-radius: var.$radius;
     margin-left: 1em;
+}
+
+@media(max-width: 767px){
+    #container{
+        flex-direction: column;
+        width: 100%;
+      }
+      #nav-section{
+        background: var.$color-secondary;
+        min-width: 100%;
+        min-height: fit-content;
+        border-radius: var.$radius;
+        nav {
+          width: 100%;
+          min-height: 100%;
+          // min-width: fit-content;
+          color: white;
+          display: flex;
+          // justify-content: center;
+          flex-direction: column;
+          #headshot-container{
+              border-radius: 10%;
+              overflow:hidden;
+              margin: 1em;
+              width: 50%;
+              display: flex;
+              justify-content: center;
+              align-self: center;
+
+              img{
+                  max-width: 100%;
+                  transform: scale(1.4);
+              }
+          }
+          h1{
+              text-align: center;
+              font-size: xx-large;
+              border-bottom:solid 1px ;
+              width: 100%;
+          }
+          li{
+              list-style: none;
+              button{
+                  color: var.$color-primary;
+                  width: 100%;
+                  font-size: 1.75em;
+                  background: var.$color-secondary;
+                  border: none;
+                  border-radius: var.$radius;
+                  margin-top: 1rem;
+                  &:hover{
+                      text-decoration:underline;
+                  }
+              }
+          }
+        }
+      }
+      .about-me-content{
+        margin: 2em;
+    }
+    
+    #content-area-main{
+        min-width: 75%;
+        min-height: 100%;
+        height: fit-content;
+        background: whitesmoke;
+        border-radius: var.$radius;
+        margin-top: 0.5em;
+        margin-left: 0;
+    }
 }
   

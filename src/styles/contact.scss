@@ -33,7 +33,7 @@
             height: 2em;
         }
         #message-body{
-            height: 5em;
+            height: 10em;
             resize: none;
         }
         #submit-btn-contact{
@@ -52,7 +52,35 @@
     a{
             img{
                 width: 100%;
-                max-width: 20em;
+                max-width: 17em;
             }
         }
+}
+
+@media(max-width: 767px){
+    #email-form{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        form{
+            width: 75%;
+            #message-body{
+                height: 7.5em;
+                resize: none;
+            }
+            #submit-btn-contact{
+                max-width: fit-content;
+                background-color: var.$color-secondary;
+                color: white;
+                border-radius: var.$radius;
+            }
+        }
+    }
+    #links{
+        a{
+                img{
+                    max-width: 10em;
+                }
+            }
+    }
 }

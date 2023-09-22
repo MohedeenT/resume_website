@@ -36,7 +36,7 @@ export default function Main(){
             </div>
             <div className="line">
                 <hr />
-            <h1>HOBBIES & INTERESTS</h1>
+            <h1>HOBBIES</h1>
             <hr />
             </div>
             <div className="hobbies">

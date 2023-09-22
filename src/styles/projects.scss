@@ -22,8 +22,9 @@ h2{
             border-radius: var.$radius;
             border: none;
             scrollbar-width: 1px;
+            width:440px;
             min-height: 350px;
-            min-width: 470px;
+            max-width: 470px;
         }
             a{
                 button{
@@ -63,6 +64,7 @@ h2{
         }
             // a{
                 button{
+                    text-decoration:line-through;
                     color: white;
                     font-size: 1em;
                     border: none;
@@ -92,5 +94,11 @@ h2{
                 max-width: 5em;
             }
         }
+    }
+}
+
+@media(max-width: 1300px){
+    #websites{
+        flex-direction: column;
     }
 }

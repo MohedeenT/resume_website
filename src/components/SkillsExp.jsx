@@ -18,29 +18,37 @@ export default function SkillsExp(){
             <div id="technologies">
                 <div id="frontend">
                 <div className="box">
+                <section className="tech-type">
                     <h2>FRONTEND</h2>
+                    </section>
+                    <section className="tech">
                     <li>JavaScript</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>SASS</li>
                     <li>React.js</li>
+                    </section>
                 </div>
 
                 </div>
                 <div id="backend">
                 <div className="box">
+                    <section className="tech-type">
                     <h2>BACKEND</h2>
+                    </section>
+                    <section className="tech">
                     <li>Node.js</li>
                     <li>Express</li>
                     <li>PostgresSQL</li>
                     <li>Insomnia</li>
+                    </section>
                 </div>
 
                 </div>
             </div>
             <div className="line">
                 <hr />
-                <h1> PROFESSIONAL EXPERIENCE </h1>
+                <h1> EXPERIENCE </h1>
                 <hr />
             </div>
             <div id="experience">

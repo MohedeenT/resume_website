@@ -16,21 +16,25 @@ export default function Nav(props){
         <h1>Mohedeen Tabbara</h1>
         <li>
             <button
+            style={props.page === "Main" ? {background:'white'}:{}}
             onClick={()=>props.setPage("Main")}
             > HOME </button>
             </li>
         <li>
             <button
+            style={props.page === "SkillsExp" ? {background:'white'}:{}}
             onClick={()=>props.setPage("SkillsExp")}
-            > SKILLS AND EXPERIENCE </button>
+            > SKILLS & EXPERIENCE </button>
             </li>
         <li>
             <button
+            style={props.page === "Projects" ? {background:'white'}:{}}
             onClick={()=>props.setPage("Projects")}
             > PROJECTS </button>
             </li>
         <li>
             <button
+            style={props.page === "Contact" ? {background:'white'}:{}}
             onClick={()=>props.setPage("Contact")}
             > CONTACT </button>
             </li>

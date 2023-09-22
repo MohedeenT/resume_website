@@ -12,6 +12,29 @@ export default function Contact(){
         messageBody:""
     })
 
+    
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        const config ={
+            SecureToken:"0c984fbd-c01b-4634-b734-2c0e29984d42",
+            To : 'mohedine.tabbara@gmail.com',
+            From : formData.email,
+            Subject : `from: ${formData.name} - ${formData.subject}`,
+            Body : formData.messageBody
+        }
+        if (window.Email) {
+            window.Email.send(config).then(
+                message => alert(message)
+              );
+        }
+        setFormData({
+        name:"",
+        email:"",
+        subject:"",
+        messageBody:""
+    })
+    }
+
     return(
         <>
         <div className="line">
@@ -22,12 +45,39 @@ export default function Contact(){
             <div id="email-form">
             <form action="submit">
                 <section id="nameAndEmail">
-                <input id="name" type="text" placeholder="Name" />
-                <input id="email" type="email" placeholder="Email address" />
+                <input 
+                id="name" 
+                type="text" 
+                placeholder="Name"
+                onChange={(e) => setFormData((currentData) => ({ ...currentData, name: e.target.value}))}
+                value={formData.name} />
+                <input 
+                id="email" 
+                type="email" 
+                placeholder="Email address"
+                onChange={(e) => setFormData((currentData) => ({ ...currentData, email: e.target.value}))}
+                value={formData.email}
+                />
                 </section>
-                <input id="subject" type="text" placeholder="Subject" />
-                <textarea id="message-body" type="text" />
-                <input id="submit-btn-contact" type="submit" value="Send Email" />
+                <input 
+                id="subject" 
+                type="text" 
+                placeholder="Subject"
+                onChange={(e) => setFormData((currentData) => ({ ...currentData, subject: e.target.value}))}
+                value={formData.subject}
+                />
+                <textarea 
+                id="message-body" 
+                type="text"
+                onChange={(e) => setFormData((currentData) => ({ ...currentData, messageBody: e.target.value}))}
+                value={formData.messageBody}
+                />
+                <input 
+                id="submit-btn-contact" 
+                type="submit" 
+                value="Send Email"
+                onClick={(e)=>handleSubmit(e)}
+                />
             </form>
             </div>
             <div className="line">
