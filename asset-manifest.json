@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume_website/static/css/main.932ac21f.css",
-    "main.js": "/resume_website/static/js/main.27f0f69e.js",
+    "main.css": "/resume_website/static/css/main.0f5dd5c2.css",
+    "main.js": "/resume_website/static/js/main.11070c1b.js",
     "static/media/headshot.jpeg": "/resume_website/static/media/headshot.3be43d73d8d92104db27.jpeg",
     "static/media/resume.pdf": "/resume_website/static/media/resume.8874d492eb1e2e81619b.pdf",
     "static/media/outdoors-svgrepo-com.svg": "/resume_website/static/media/outdoors-svgrepo-com.633f4fe9f28c9e9732528fda7831c33c.svg",
@@ -11,11 +11,11 @@
     "static/media/travel-round-svgrepo-com.svg": "/resume_website/static/media/travel-round-svgrepo-com.d62aa35822ea65f38b5e8d7c4ac32fae.svg",
     "index.html": "/resume_website/index.html",
     "static/media/linkedin.svg": "/resume_website/static/media/linkedin.e6caf06bea36e8c1fd7545706cd71c86.svg",
-    "main.932ac21f.css.map": "/resume_website/static/css/main.932ac21f.css.map",
-    "main.27f0f69e.js.map": "/resume_website/static/js/main.27f0f69e.js.map"
+    "main.0f5dd5c2.css.map": "/resume_website/static/css/main.0f5dd5c2.css.map",
+    "main.11070c1b.js.map": "/resume_website/static/js/main.11070c1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.932ac21f.css",
-    "static/js/main.27f0f69e.js"
+    "static/css/main.0f5dd5c2.css",
+    "static/js/main.11070c1b.js"
   ]
 }
